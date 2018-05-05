@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.views.login">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="CornflowerBlue" >
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions >
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition Height="2*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout>
+                    <Image Source="icon.png"></Image>
+                    <Label  Text="Prestaudio" Style="{StaticResource Titulo}"></Label>
+                    <Label FontSize="Medium" Text="Encuentra el equipo que necesitas para tu evento"></Label>
+                </StackLayout>
+                <StackLayout Grid.Row="1" BackgroundColor="WhiteSmoke">
+                    <StackLayout VerticalOptions="Center" BackgroundColor="AliceBlue">
+                    <Label Text="Usuario" HorizontalTextAlignment="Start" ></Label>
+                    <Entry Placeholder="Ingrese su nombre de usuario"></Entry>
+                    <Label Text="Contraseña" HorizontalTextAlignment="Start" ></Label>
+                    <Entry Placeholder="Ingrese su contraseña" IsPassword="True"></Entry>
+                    <Button Text="Login"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
